@@ -8,7 +8,7 @@ angular.module('gdgXBoomerang')
         'pwaId'         : '5915725140705884785', // Picasa Web Album id, must belong to Google+ id above
         'domain'        : 'http://www.gdgspacecoast.org',
         'twitter'       : 'gdg_hr',
-        'facebook'      : '',
+        'facebook'      : 'gdghamptonroads',
         'meetup'        : 'GDG-Hampton-Roads',
         // Change to 'EEEE, MMMM d, y - H:mm' for 24 hour time format.
         'dateFormat'    : 'EEEE, MMMM d, y - h:mm a',
