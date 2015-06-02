@@ -14,6 +14,7 @@ var gulpInject = require('gulp-inject');
 var mainBowerFiles = require('main-bower-files');
 var angularFilesort = require('gulp-angular-filesort');
 var gulpFile = require('gulp-file');
+var ghPages = require('gulp-gh-pages');
 
 const CDN_FILES = require(__dirname + '/config/CDN.json');
 const outputPath = __dirname + '/app/dist/';
@@ -170,3 +171,9 @@ function devBuild() {
         .pipe(gulpInject(styles))
         .pipe(gulp.dest(__dirname));
 }
+
+// Add deploy task
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
